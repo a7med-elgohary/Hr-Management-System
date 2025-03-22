@@ -1,0 +1,12 @@
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.Design
+Install-Package Microsoft.EntityFrameworkCore.InMemory
+Install-Package Swashbuckle.AspNetCore
+Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
+Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection
+Install-Package FluentValidation.AspNetCore
+Install-Package Microsoft.AspNetCore.Cors
+Install-Package NLog.Web.AspNetCore
+Install-Package Newtonsoft.Json
+
