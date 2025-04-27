@@ -4,40 +4,21 @@ using System.Collections.Generic;
 
 namespace HR_System.Infrastructure.Repository
 {
-    public class GenericRepository <T> : IRepository<T> where T : class
+    public abstract class GenericRepository <T> : IRepository<T> where T : class
     {
         protected readonly AppDbContext _dbContext;
         protected readonly DbSet<T> _Dbset;
 
-        public GenericRepository(AppDbContext dbContext)
+        protected GenericRepository(AppDbContext dbContext)
         {
             _dbContext = dbContext;
             _Dbset = _dbContext.Set<T>();  
         }
 
-        public Task AddAsync(T entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task DeleteAsync(long id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<T>> GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<T> GetByIdAsync(long id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateAsync(T entity)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Task AddAsync(T entity);
+        public abstract Task DeleteAsync(long id);
+        public abstract Task<IEnumerable<T>> GetAllAsync();
+        public abstract Task<T> GetByIdAsync(long id);
+        public abstract Task UpdateAsync(T entity);
     }
 }
