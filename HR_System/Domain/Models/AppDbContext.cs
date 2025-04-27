@@ -1,4 +1,4 @@
-﻿using HR_System.Domain.Models;
+using HR_System.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 public class AppDbContext : DbContext
@@ -14,6 +14,7 @@ public class AppDbContext : DbContext
     public DbSet<Role> Roles { get; set; }
     public DbSet<RolePermission> RolePermissions { get; set; }
     public DbSet<UserRole> UserRoles { get; set; }
+    public DbSet<Permission> Permissions { get; set; }
 
     public DbSet<AuditLog> AuditLogs { get; set; }
     public DbSet<Promotion> Promotions { get; set; }
@@ -68,6 +69,12 @@ public class AppDbContext : DbContext
             .HasOne(rp => rp.Role)
             .WithMany(r => r.RolePermissions)
             .HasForeignKey(rp => rp.RoleId);
+
+        // RolePermission - Permission (Many-to-One)
+        modelBuilder.Entity<RolePermission>()
+            .HasOne(rp => rp.Permission)
+            .WithMany(p => p.RolePermissions)
+            .HasForeignKey(rp => rp.PermissionId);
 
  
        
