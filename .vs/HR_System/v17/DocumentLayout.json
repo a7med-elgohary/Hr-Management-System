@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\ahmed hossny\\desktop\\sdp\\hr_system\\infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\ahmed hossny\\desktop\\sdp\\hr_system\\domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\ahmed hossny\\desktop\\sdp\\hr_system\\infrastructure\\repository\\intefaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\intefaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\ahmed hossny\\desktop\\sdp\\hr_system\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Domain\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Domain\\Models\\Employee.cs",
+              "RelativeToolTip": "HR_System\\Domain\\Models\\Employee.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:33:18.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:16:26.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\Intefaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\Intefaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\Intefaces\\IRepository.cs",
+              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\Intefaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:17:21.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwB8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:15:56.079Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
