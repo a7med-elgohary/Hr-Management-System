@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\HR_System.csproj": {}
+    "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\HR_System.csproj": {
+    "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\HR_System.csproj",
+        "projectUniqueName": "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj",
         "projectName": "HR_System",
-        "projectPath": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\HR_System.csproj",
-        "packagesPath": "C:\\Users\\Ahmed Hossny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\obj\\",
+        "projectPath": "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj",
+        "packagesPath": "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\",
+        "outputPath": "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ahmed Hossny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LAPTOP WORLD\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -72,7 +72,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -86,7 +86,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -96,7 +96,7 @@
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "NLog.Web.AspNetCore": {
               "target": "Package",
@@ -130,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

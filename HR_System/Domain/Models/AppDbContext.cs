@@ -20,7 +20,7 @@ public class AppDbContext : DbContext
     public DbSet<Project> Projects { get; set; }
     public DbSet<EmployeeTask> EmployeeTasks { get; set; }
     public DbSet<Training> Trainings { get; set; }
-
+    public DbSet<Events> events { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -69,8 +69,21 @@ public class AppDbContext : DbContext
             .WithMany(r => r.RolePermissions)
             .HasForeignKey(rp => rp.RoleId);
 
- 
-       
+
+        // Employee - Events (1 : N)
+        modelBuilder.Entity<Events>()
+             .HasOne(ev => ev.Employee)
+             .WithMany(emp => emp.Events)
+             .HasForeignKey(ev => ev.EmployeeID)
+             .OnDelete(DeleteBehavior.Restrict);;
+
+        // Event constraint
+        modelBuilder.Entity<Events>().HasKey(e => e.Id);
+        modelBuilder.Entity<Events>().Property(e => e.Description).IsRequired(false);
+        modelBuilder.Entity<Events>().Property(e => e.Name).IsRequired();
+        modelBuilder.Entity<Events>().Property(e => e.CreatedDate).IsRequired();
+
+
 
         modelBuilder.Entity<EmployeeTask>()
             .HasOne(et => et.Employee)

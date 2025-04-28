@@ -49,7 +49,7 @@ namespace HR_System.Domain.Models
         public virtual ICollection<Promotion> Promotions { get; set; } = new List<Promotion>();
         public virtual ICollection<EmployeeTask> EmployeeTasks { get; set; } = new List<EmployeeTask>();
         public virtual ICollection<Training> Trainings { get; set; } = new List<Training>();
-
+        public virtual ICollection<Events> Events { get; set; }
 
         //one to one
         [ForeignKey("UserAccount")]
