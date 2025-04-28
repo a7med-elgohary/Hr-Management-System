@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 
@@ -9,8 +9,10 @@ namespace HR_System.Domain.Models
         [Key]
         public long Id { get; set; }
 
+        [Required]
         [ForeignKey("Employee")]
         public long EmployeeId { get; set; }
+        public virtual Employee? Employee { get; set; }
 
         [Required]
         [MaxLength(100)]
@@ -20,13 +22,19 @@ namespace HR_System.Domain.Models
         [MaxLength(255)]
         public required string PasswordHash { get; set; }
 
-        [Required]
-        public required Role Role { get; set; }
+        [EmailAddress]
+        public string? Email { get; set; }
 
-        //one to one
-        public required virtual Employee Employee { get; set; }
-        public virtual ICollection<UserRole>? UserRoles { get; set; }
-        public virtual ICollection<AuditLog>?AuditLogs { get; set; }
+        public bool IsActive { get; set; } = true;
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime? LastLoginDate { get; set; }
+
+        // Many-to-Many with Role
+        public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
+
+        // Audit logs
+        public virtual ICollection<AuditLog>? AuditLogs { get; set; }
     }
 }
 

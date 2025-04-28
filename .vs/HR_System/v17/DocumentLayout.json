@@ -1,31 +1,90 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\",
+  "WorkspaceRootPath": "C:\\Users\\USERR\\Desktop\\HR_System\\",
   "Documents": [
     {
-<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250427210654_IntialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HR_System\\Migrations\\20250427210654_IntialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\migrations\\20250427210740_intialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\migrations\\20250427210740_intialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\migrations\\20250427211759_fixemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\migrations\\20250427211759_fixemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\migrations\\20250427221245_deploy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\migrations\\20250427221245_deploy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\employee.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\employee.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\rolepermission.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\rolepermission.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\intefaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\intefaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\intefaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\intefaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\role.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\role.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\employee.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\employee.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\intefaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\intefaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\application\\services\\intrfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\application\\services\\intrfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\rolepermission.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\rolepermission.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\userrole.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -38,30 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\promotion.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\promotion.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\migrations\\20250322131904_editesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\migrations\\20250322131904_editesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\ahmed hossny\\desktop\\sdp\\hr_system\\infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\ahmed hossny\\desktop\\sdp\\hr_system\\domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\ahmed hossny\\desktop\\sdp\\hr_system\\infrastructure\\repository\\intefaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\intefaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\ahmed hossny\\desktop\\sdp\\hr_system\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> c65ee0aea4a5a7eaea6a72af68bd7c4a930c4434
     }
   ],
   "DocumentGroupContainers": [
@@ -71,22 +106,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 16,
           "Children": [
-            {
-<<<<<<< HEAD
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "HR_System\\Api\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "HR_System\\Api\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T00:05:40.869Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -101,91 +122,233 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20250322131904_editeSalary.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250322131904_editeSalary.cs",
-              "RelativeDocumentMoniker": "HR_System\\Migrations\\20250322131904_editeSalary.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250322131904_editeSalary.cs",
-              "RelativeToolTip": "HR_System\\Migrations\\20250322131904_editeSalary.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "20250427221245_deploy.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250427221245_deploy.cs",
+              "RelativeDocumentMoniker": "HR_System\\Migrations\\20250427221245_deploy.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250427221245_deploy.cs",
+              "RelativeToolTip": "HR_System\\Migrations\\20250427221245_deploy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T13:19:04.525Z"
+              "WhenOpened": "2025-04-27T22:12:45.524Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
-              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-=======
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Domain\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\Employee.cs",
-              "ToolTip": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Domain\\Models\\Employee.cs",
-              "RelativeToolTip": "HR_System\\Domain\\Models\\Employee.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:33:18.631Z",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\appsettings.json",
+              "RelativeDocumentMoniker": "HR_System\\appsettings.json",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\appsettings.json",
+              "RelativeToolTip": "HR_System\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-27T22:00:58.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
-              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
->>>>>>> c65ee0aea4a5a7eaea6a72af68bd7c4a930c4434
+              "Title": "20250427211759_fixEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250427211759_fixEmployee.cs",
+              "RelativeDocumentMoniker": "HR_System\\Migrations\\20250427211759_fixEmployee.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250427211759_fixEmployee.cs",
+              "RelativeToolTip": "HR_System\\Migrations\\20250427211759_fixEmployee.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAD0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:16:26.662Z",
+              "WhenOpened": "2025-04-27T21:17:59.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
+              "DocumentIndex": 2,
+              "Title": "20250427210740_IntialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250427210740_IntialCreate.cs",
+              "RelativeDocumentMoniker": "HR_System\\Migrations\\20250427210740_IntialCreate.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250427210740_IntialCreate.cs",
+              "RelativeToolTip": "HR_System\\Migrations\\20250427210740_IntialCreate.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAG4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:07:40.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250427210654_IntialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250427210654_IntialCreate.cs",
+              "RelativeDocumentMoniker": "HR_System\\Migrations\\20250427210654_IntialCreate.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Migrations\\20250427210654_IntialCreate.cs",
+              "RelativeToolTip": "HR_System\\Migrations\\20250427210654_IntialCreate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:06:54.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Permission.cs",
+              "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\Permission.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Permission.cs",
+              "RelativeToolTip": "HR_System\\Domain\\Models\\Permission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:08:05.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\Intefaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\Intefaces\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\Intefaces\\IGenericRepository.cs",
+              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\Intefaces\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:56:27.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:48:57.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\Intefaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\Intefaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\Intefaces\\IUserRepository.cs",
+              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\Intefaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:48:45.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\User.cs",
+              "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\User.cs",
+              "RelativeToolTip": "HR_System\\Domain\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:21:28.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "HR_System\\Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "HR_System\\Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAwDwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:08:03.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Program.cs",
+              "RelativeDocumentMoniker": "HR_System\\Program.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Program.cs",
+              "RelativeToolTip": "HR_System\\Program.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAkwHoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:05:44.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\Intefaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\Intefaces\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\Intefaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\Intefaces\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:02:03.352Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "authController.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Api\\Controllers\\authController.cs",
+              "RelativeDocumentMoniker": "HR_System\\Api\\Controllers\\authController.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Api\\Controllers\\authController.cs",
+              "RelativeToolTip": "HR_System\\Api\\Controllers\\authController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:59:39.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\intrfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "HR_System\\Application\\Services\\intrfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\intrfaces\\IAuthService.cs",
+              "RelativeToolTip": "HR_System\\Application\\Services\\intrfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T16:58:47.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T12:57:42.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
               "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
               "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
               "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T12:51:38.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Role.cs",
               "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\Role.cs",
               "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Role.cs",
               "RelativeToolTip": "HR_System\\Domain\\Models\\Role.cs",
-=======
-              "DocumentIndex": 2,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\Intefaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\Intefaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\Intefaces\\IRepository.cs",
-              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\Intefaces\\IRepository.cs",
->>>>>>> c65ee0aea4a5a7eaea6a72af68bd7c4a930c4434
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:17:21.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-22T12:50:25.589Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\UserRole.cs",
@@ -197,20 +360,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 20,
               "Title": "RolePermission.cs",
               "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\RolePermission.cs",
               "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\RolePermission.cs",
               "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\RolePermission.cs",
               "RelativeToolTip": "HR_System\\Domain\\Models\\RolePermission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T12:46:56.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-22T12:46:56.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
               "Title": "Promotion.cs",
               "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Promotion.cs",
               "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\Promotion.cs",
@@ -222,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "Salary.cs",
               "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Salary.cs",
               "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\Salary.cs",
@@ -234,39 +396,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\Employee.cs",
               "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Employee.cs",
               "RelativeToolTip": "HR_System\\Domain\\Models\\Employee.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T12:33:20.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\AppDbContext.cs",
               "RelativeToolTip": "HR_System\\Domain\\Models\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T12:24:18.196Z"
-=======
-              "DocumentIndex": 0,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
-              "ToolTip": "C:\\Users\\Ahmed Hossny\\Desktop\\SDP\\HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
-              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\EmployeeRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAiwB8AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:15:56.079Z",
-              "EditorCaption": ""
->>>>>>> c65ee0aea4a5a7eaea6a72af68bd7c4a930c4434
             }
           ]
         }

@@ -1,24 +1,51 @@
 ﻿using HR_System.Infrastructure.Repository.Intefaces;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace HR_System.Infrastructure.Repository
 {
-    public abstract class GenericRepository <T> : IRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly AppDbContext _dbContext;
-        protected readonly DbSet<T> _Dbset;
+        protected readonly DbSet<T> _DbSet;
 
-        protected GenericRepository(AppDbContext dbContext)
+        public GenericRepository(AppDbContext dbContext)
         {
             _dbContext = dbContext;
-            _Dbset = _dbContext.Set<T>();  
+            _DbSet = _dbContext.Set<T>();
         }
 
-        public abstract Task AddAsync(T entity);
-        public abstract Task DeleteAsync(long id);
-        public abstract Task<IEnumerable<T>> GetAllAsync();
-        public abstract Task<T> GetByIdAsync(long id);
-        public abstract Task UpdateAsync(T entity);
+        public async Task AddAsync(T entity)
+        {
+            await _DbSet.AddAsync(entity);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(long id)
+        {
+            var entity = await _DbSet.FindAsync(id);
+            if (entity != null)
+            {
+                _DbSet.Remove(entity);
+                await _dbContext.SaveChangesAsync();
+            }
+        }
+
+        public async Task<IEnumerable<T>> GetAllAsync()
+        {
+            return await _DbSet.ToListAsync();
+        }
+
+        public async Task<T> GetByIdAsync(long id)
+        {
+            return await _DbSet.FindAsync(id);
+        }
+
+        public async Task UpdateAsync(T entity)
+        {
+            _DbSet.Update(entity);
+            await _dbContext.SaveChangesAsync();
+        }
     }
 }

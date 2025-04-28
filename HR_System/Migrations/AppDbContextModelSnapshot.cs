@@ -106,6 +106,10 @@ namespace HR_System.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<string>("Address")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
                     b.Property<long>("DepartmentId")
                         .HasColumnType("bigint");
 
@@ -120,7 +124,7 @@ namespace HR_System.Migrations
                     b.Property<DateTime>("HireDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("JobTiltle")
+                    b.Property<string>("JobTitle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -131,7 +135,7 @@ namespace HR_System.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<long>("UserAccountId")
+                    b.Property<long?>("UserAccountId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
@@ -214,6 +218,27 @@ namespace HR_System.Migrations
                     b.HasIndex("EmployeeId");
 
                     b.ToTable("Leaves");
+                });
+
+            modelBuilder.Entity("HR_System.Domain.Models.Permission", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Permissions");
                 });
 
             modelBuilder.Entity("HR_System.Domain.Models.Project", b =>
@@ -313,14 +338,15 @@ namespace HR_System.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<string>("Permission")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long>("PermissionId")
+                        .HasColumnType("bigint");
 
                     b.Property<long>("RoleId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PermissionId");
 
                     b.HasIndex("RoleId");
 
@@ -397,16 +423,25 @@ namespace HR_System.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<long>("EmployeeId")
                         .HasColumnType("bigint");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastLoginDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
-
-                    b.Property<long>("RoleId")
-                        .HasColumnType("bigint");
 
                     b.Property<string>("Username")
                         .IsRequired()
@@ -416,8 +451,6 @@ namespace HR_System.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("EmployeeId");
-
-                    b.HasIndex("RoleId");
 
                     b.ToTable("Users");
                 });
@@ -487,9 +520,7 @@ namespace HR_System.Migrations
 
                     b.HasOne("HR_System.Domain.Models.User", "UserAccount")
                         .WithMany()
-                        .HasForeignKey("UserAccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UserAccountId");
 
                     b.Navigation("Department");
 
@@ -540,11 +571,19 @@ namespace HR_System.Migrations
 
             modelBuilder.Entity("HR_System.Domain.Models.RolePermission", b =>
                 {
+                    b.HasOne("HR_System.Domain.Models.Permission", "Permission")
+                        .WithMany("RolePermissions")
+                        .HasForeignKey("PermissionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("HR_System.Domain.Models.Role", "Role")
                         .WithMany("RolePermissions")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Permission");
 
                     b.Navigation("Role");
                 });
@@ -579,15 +618,7 @@ namespace HR_System.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("HR_System.Domain.Models.Role", "Role")
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Employee");
-
-                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("HR_System.Domain.Models.UserRole", b =>
@@ -627,6 +658,11 @@ namespace HR_System.Migrations
                     b.Navigation("Salaries");
 
                     b.Navigation("Trainings");
+                });
+
+            modelBuilder.Entity("HR_System.Domain.Models.Permission", b =>
+                {
+                    b.Navigation("RolePermissions");
                 });
 
             modelBuilder.Entity("HR_System.Domain.Models.Role", b =>

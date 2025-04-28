@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -18,13 +18,17 @@ namespace HR_System.Domain.Models
         [EmailAddress]
         public required string Email { get; set; }
 
+        // Address - NULLABULE
+        [StringLength(200)]
+        public string? Address { get; set; }
+
         // Phone Number - NOT NULL
         [Required]
         public required string PhoneNumber { get; set; }
 
         // Phone Number - NOT NULL
         [Required]
-        public required string JobTiltle { get; set; }
+        public required string JobTitle { get; set; }
 
         // Hire Date - NOT NULL
         [Required]
@@ -53,7 +57,7 @@ namespace HR_System.Domain.Models
 
         //one to one
         [ForeignKey("UserAccount")]
-        public long UserAccountId { get; set; }
+        public long? UserAccountId { get; set; }
         public User? UserAccount { get; set; }
     }
 }

@@ -25,15 +25,6 @@ namespace HR_System.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
 
-            EmployeeRepository.AddAsync();
-
-
-
-
-
-
-
-
 
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

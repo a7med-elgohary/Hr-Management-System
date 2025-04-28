@@ -1,4 +1,7 @@
-﻿using HR_System.Domain.Models;
+using HR_System.Application.Services;
+using HR_System.Application.Services.intrfaces;
+using HR_System.Domain.Models;
+using HR_System.Infrastructure.Repository;
 using HR_System.Infrastructure.Repository.Intefaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Hosting;
@@ -6,6 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace HR_System
 {
@@ -15,8 +20,23 @@ namespace HR_System
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // in non-development, listen on HTTP port 80 to skip SSL redirection
+            if (!builder.Environment.IsDevelopment())
+            {
+                builder.WebHost.ConfigureKestrel(opts =>
+                {
+                    opts.ListenAnyIP(80);
+                });
+            }
+
             // Add services to the container.
             builder.Services.AddControllers();
+            // enable CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy =>
+                    policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
             //Context
             builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -49,7 +69,6 @@ namespace HR_System
             #endregion
 
             #region Add JWT Authentication
-
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -57,9 +76,21 @@ namespace HR_System
             })
             .AddJwtBearer(options =>
             {
-                options.RequireHttpsMetadata = false;  // Use this for local development
-                options.Authority = "https://your-auth-server.com"; // Replace with your Auth server URL
-                options.Audience = "your-api-audience"; // Replace with your API audience
+                // options.RequireHttpsMetadata = false;  
+                // options.Authority = "https://your-auth-server.com"; 
+                // options.Audience = "your-api-audience"; 
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                    ValidAudience = builder.Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                };
+                // فقط للتطوير المحلي، لا تستخدم في الإنتاج
+                options.RequireHttpsMetadata = false;
             });
             builder.Services.AddAuthorization();
             #endregion
@@ -69,6 +100,9 @@ namespace HR_System
             #endregion
 
             #region dependency injection
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IAuthService, AuthService>();
             #endregion
 
 
@@ -82,15 +116,17 @@ namespace HR_System
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "HR System API v1");
-                    c.RoutePrefix = string.Empty; // Open Swagger UI at the root URL
+                    c.RoutePrefix = string.Empty; 
                 });
             }
 
-            app.UseHttpsRedirection();
-            app.UseAuthentication();  // Enable Authentication middleware
-            app.UseAuthorization();   // Enable Authorization middleware
-            app.MapControllers();     // Map controller endpoints
             app.UseRouting();
+            app.UseCors("AllowAll");
+            app.UseAuthentication();  
+            app.UseAuthorization();   
+            app.MapControllers();     
+            // root health-check endpoint
+            app.MapGet("/", () => Results.Ok("HR System API is running"));
             app.Run();
         }
     }
