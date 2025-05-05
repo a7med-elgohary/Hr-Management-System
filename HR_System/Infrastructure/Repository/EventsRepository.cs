@@ -1,16 +1,17 @@
 ﻿using HR_System.Domain.Models;
+using HR_System.Infrastructure.Repository.Intefaces;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace HR_System.Infrastructure.Repository
 {
-    public class EventsRepository : GenericRepository<Events>
+    public class EventsRepository : GenericRepository<Events> , IEventRepository
     {
         public EventsRepository(AppDbContext dbContext) : base(dbContext)
         {
         }
 
-        public override async Task AddAsync(Events events)
+        public async Task AddAsync(Events events)
         {
             if (events.Id == null && events.EmployeeID == null)
             {
@@ -24,7 +25,7 @@ namespace HR_System.Infrastructure.Repository
             await _dbContext.SaveChangesAsync();
         }
 
-        public override async Task DeleteAsync(long id)
+        public async Task DeleteAsync(long id)
         {
             var evnt = await _dbContext.events.FirstOrDefaultAsync(e => e.Id == id);
             if (evnt == null)
@@ -35,7 +36,7 @@ namespace HR_System.Infrastructure.Repository
             await _dbContext.SaveChangesAsync();
         }
 
-        public override async Task<IEnumerable<Events>> GetAllAsync()
+        public async Task<IEnumerable<Events>> GetAllAsync()
         {
             var evnts = await _dbContext.events.ToListAsync();
             if (evnts == null)
@@ -45,7 +46,7 @@ namespace HR_System.Infrastructure.Repository
             return evnts;
         }
 
-        public override async Task<Events> GetByIdAsync(long id)
+        public async Task<Events> GetByIdAsync(long id)
         {
             var evnt = await _dbContext.events.FirstOrDefaultAsync(e => e.Id == id);
             if (evnt == null)
@@ -55,7 +56,17 @@ namespace HR_System.Infrastructure.Repository
             return evnt;
         }
 
-        public override async Task UpdateAsync(Events _evnt)
+        public async Task<IEnumerable<Events>> GetIsAvailableEvents()
+        {
+            var events = await _dbContext.events.Where(e => e.IsDeleted != false && e.CreatedDate.Day < DateTime.Now.Day).ToListAsync();
+            if (events == null)
+            {
+                throw new ValidationException("No Events is available");
+            }
+            return events;
+        }
+
+        public async Task UpdateAsync(Events _evnt)
         {
             var evnt = await _dbContext.events.FirstOrDefaultAsync(e => e.Id == _evnt.Id);
             if (evnt == null)
