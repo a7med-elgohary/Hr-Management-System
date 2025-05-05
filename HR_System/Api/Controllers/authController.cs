@@ -29,7 +29,7 @@ namespace HR_System.Api.Controllers
             var result = await _authService.RegisterAsync(request);
             if (!result.Success)
                 return BadRequest(new { message = result.ErrorMessage });
-            return Ok(new { message = "Registration successful", token = result.Token });
+            return Ok(new { message = "Registration successful"});
         }
 
         [HttpGet("test")]
@@ -40,15 +40,15 @@ namespace HR_System.Api.Controllers
 
         public class LoginRequest
         {
-            public string Username { get; set; }
-            public string Password { get; set; }
+            public required string Username { get; set; }
+            public required string Password { get; set; }
         }
 
         public class RegisterRequest
         {
-            public string Username { get; set; }
-            public string Email { get; set; }
-            public string Password { get; set; }
+            public required string Username { get; set; }
+            public required string Email { get; set; }
+            public required string Password { get; set; }
             public long EmployeeId { get; set; }
         }
     }

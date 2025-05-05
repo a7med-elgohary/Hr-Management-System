@@ -47,7 +47,11 @@ namespace HR_System.Application.Services
             claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
             claims.AddRange(permissions.Select(p => new Claim("permission", p)));
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+            var jwtKey = _config["Jwt:Key"];
+            if (string.IsNullOrEmpty(jwtKey))
+                throw new InvalidOperationException("JWT key is not configured properly.");
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(

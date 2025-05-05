@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\HR_System.csproj": {}
   },
   "projects": {
@@ -13,29 +12,12 @@
         "projectPath": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\HR_System.csproj",
         "packagesPath": "C:\\Users\\USERR\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\obj\\",
-=======
-    "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj": {}
-  },
-  "projects": {
-    "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj",
-        "projectName": "HR_System",
-        "projectPath": "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj",
-        "packagesPath": "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\",
-        "outputPath": "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\obj\\",
->>>>>>> 63d50b67c2ede265dd3a26579c40da8f90c71ead
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\USERR\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\LAPTOP WORLD\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 63d50b67c2ede265dd3a26579c40da8f90c71ead
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -152,11 +134,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
->>>>>>> 63d50b67c2ede265dd3a26579c40da8f90c71ead
         }
       }
     }

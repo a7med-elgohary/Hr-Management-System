@@ -8,7 +8,7 @@ public class AppDbContext : DbContext
     public DbSet<Employee> Employees { get; set; }
     public DbSet<Attendance> Attendances { get; set; }
     public DbSet<Leave> Leaves { get; set; }
-    public DbSet<Salary> Salaries { get; set; }// hint
+    public DbSet<Salary> Salaries { get; set; }
     public DbSet<User> Users { get; set; }
     
     public DbSet<Role> Roles { get; set; }
@@ -70,7 +70,6 @@ public class AppDbContext : DbContext
             .WithMany(r => r.RolePermissions)
             .HasForeignKey(rp => rp.RoleId);
 
-<<<<<<< HEAD
         // RolePermission - Permission (Many-to-One)
         modelBuilder.Entity<RolePermission>()
             .HasOne(rp => rp.Permission)
@@ -79,7 +78,6 @@ public class AppDbContext : DbContext
 
  
        
-=======
 
         // Employee - Events (1 : N)
         modelBuilder.Entity<Events>()
@@ -95,7 +93,6 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Events>().Property(e => e.CreatedDate).IsRequired();
 
 
->>>>>>> 63d50b67c2ede265dd3a26579c40da8f90c71ead
 
         modelBuilder.Entity<EmployeeTask>()
             .HasOne(et => et.Employee)

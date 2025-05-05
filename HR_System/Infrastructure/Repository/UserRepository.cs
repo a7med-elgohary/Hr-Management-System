@@ -42,13 +42,6 @@ namespace HR_System.Infrastructure.Repository
                 .ToListAsync();
         }
 
-        //add async method to get user by id
-        public async Task AddAsync(User newuser)
-        {
-            await _DbSet.AddAsync(newuser);
-            await _dbContext.SaveChangesAsync();
-        }
-
         public async Task<bool> ExistsByUsernameAsync(string username)
         {
             return await _DbSet.AnyAsync(u => u.Username == username);

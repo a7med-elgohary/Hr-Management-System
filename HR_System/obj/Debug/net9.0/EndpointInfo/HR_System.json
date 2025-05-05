@@ -5,10 +5,10 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Auth/login": {
+    "/api/auth/login": {
       "post": {
         "tags": [
-          "Auth"
+          "auth"
         ],
         "requestBody": {
           "content": {
@@ -36,10 +36,10 @@
         }
       }
     },
-    "/api/Auth/register": {
+    "/api/auth/register": {
       "post": {
         "tags": [
-          "Auth"
+          "auth"
         ],
         "requestBody": {
           "content": {
@@ -67,10 +67,10 @@
         }
       }
     },
-    "/api/Auth/test": {
+    "/api/auth/test": {
       "get": {
         "tags": [
-          "Auth"
+          "auth"
         ],
         "responses": {
           "200": {
@@ -79,41 +79,14 @@
         }
       }
     },
-    "/WeatherForecast": {
+    "/": {
       "get": {
         "tags": [
-          "WeatherForecast"
+          "HR_System"
         ],
-        "operationId": "GetWeatherForecast",
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -122,6 +95,10 @@
   "components": {
     "schemas": {
       "LoginRequest": {
+        "required": [
+          "password",
+          "username"
+        ],
         "type": "object",
         "properties": {
           "username": {
@@ -136,6 +113,11 @@
         "additionalProperties": false
       },
       "RegisterRequest": {
+        "required": [
+          "email",
+          "password",
+          "username"
+        ],
         "type": "object",
         "properties": {
           "username": {
@@ -153,29 +135,6 @@
           "employeeId": {
             "type": "integer",
             "format": "int64"
-          }
-        },
-        "additionalProperties": false
-      },
-      "WeatherForecast": {
-        "type": "object",
-        "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "summary": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

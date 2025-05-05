@@ -16,7 +16,7 @@ namespace HR_System.Infrastructure.Repository
             _DbSet = _dbContext.Set<T>();
         }
 
-        public async Task AddAsync(T entity)
+        public virtual async Task AddAsync(T entity)
         {
             await _DbSet.AddAsync(entity);
             await _dbContext.SaveChangesAsync();
