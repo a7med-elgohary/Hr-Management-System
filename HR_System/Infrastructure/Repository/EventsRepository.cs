@@ -17,14 +17,11 @@ namespace HR_System.Infrastructure.Repository
             {
                 throw new ValidationException("ID and Employee ID Are Required");
             }
-            else if (events.CreatedDate < DateTime.Now)
+            else if (events.CreatedDate <= DateTime.Now)
             {
                 throw new ValidationException("The Date must be in the future");
             }
-<<<<<<< HEAD
-            await _dbContext.events.AddAsync(events);
-=======
-            _dbContext.events.Add(events);
+             _DbSet.Add(events);
             await _dbContext.SaveChangesAsync();
         }
 
@@ -35,7 +32,7 @@ namespace HR_System.Infrastructure.Repository
             {
                 throw new ValidationException("Not found");
             }
-            _dbContext.events.Remove(evnt);
+            _DbSet.Remove(evnt);
             await _dbContext.SaveChangesAsync();
         }
 
@@ -77,7 +74,6 @@ namespace HR_System.Infrastructure.Repository
                 throw new ValidationException("Not found");
             }
             evnt = _evnt;
->>>>>>> e13e07eafbbe6b31b50e74b75e3954837246ba7a
             await _dbContext.SaveChangesAsync();
         }
     }

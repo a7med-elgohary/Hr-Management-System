@@ -3,48 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\USERR\\Desktop\\HR_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\events.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\events.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\eventsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\eventsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\infrastructure\\repository\\intefaces\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\infrastructure\\repository\\intefaces\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|c:\\users\\userr\\desktop\\hr_system\\hr_system\\application\\services\\intrfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C2B4A36-01B0-4BFA-AB63-7AC2FF5FC24A}|HR_System\\HR_System.csproj|solutionrelative:hr_system\\application\\services\\intrfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,141 +42,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Events.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Events.cs",
-              "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\Events.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\Events.cs",
-              "RelativeToolTip": "HR_System\\Domain\\Models\\Events.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Api\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "HR_System\\Api\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Api\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "HR_System\\Api\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T18:38:51.816Z",
+              "WhenOpened": "2025-05-06T05:15:07.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\intrfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "HR_System\\Application\\Services\\intrfaces\\IEmployeeService.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\intrfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "HR_System\\Application\\Services\\intrfaces\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T15:22:43.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T05:08:54.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IEventRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\Intefaces\\IEventRepository.cs",
-              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\Intefaces\\IEventRepository.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\Intefaces\\IEventRepository.cs",
-              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\Intefaces\\IEventRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "HR_System\\Application\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "HR_System\\Application\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T15:16:32.151Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
-              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\GenericRepository.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T15:07:01.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EventsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\EventsRepository.cs",
-              "RelativeDocumentMoniker": "HR_System\\Infrastructure\\Repository\\EventsRepository.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Infrastructure\\Repository\\EventsRepository.cs",
-              "RelativeToolTip": "HR_System\\Infrastructure\\Repository\\EventsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T15:05:28.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\appsettings.json",
-              "RelativeDocumentMoniker": "HR_System\\appsettings.json",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\appsettings.json",
-              "RelativeToolTip": "HR_System\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-29T14:57:27.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "HR_System\\Domain\\Models\\AppDbContext.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAIAwwEgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T14:56:28.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\User.cs",
-              "RelativeDocumentMoniker": "HR_System\\Domain\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Domain\\Models\\User.cs",
-              "RelativeToolTip": "HR_System\\Domain\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:21:28.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "HR_System\\Application\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Application\\Services\\AuthService.cs",
-              "RelativeToolTip": "HR_System\\Application\\Services\\AuthService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:08:03.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Program.cs",
-              "RelativeDocumentMoniker": "HR_System\\Program.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Program.cs",
-              "RelativeToolTip": "HR_System\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:05:44.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "authController.cs",
-              "DocumentMoniker": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Api\\Controllers\\authController.cs",
-              "RelativeDocumentMoniker": "HR_System\\Api\\Controllers\\authController.cs",
-              "ToolTip": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\Api\\Controllers\\authController.cs",
-              "RelativeToolTip": "HR_System\\Api\\Controllers\\authController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:59:39.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T05:08:31.787Z"
             }
           ]
         }

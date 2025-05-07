@@ -5616,39 +5616,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\USERR\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\": {},
->>>>>>> e13e07eafbbe6b31b50e74b75e3954837246ba7a
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\HR_System.csproj",
       "projectName": "HR_System",
       "projectPath": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\HR_System.csproj",
       "packagesPath": "C:\\Users\\USERR\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\obj\\",
-=======
-      "projectUniqueName": "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj",
-      "projectName": "HR_System",
-      "projectPath": "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\HR_System.csproj",
-      "packagesPath": "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\",
-      "outputPath": "D:\\Hr-Management-System\\Hr-Management-System\\HR_System\\obj\\",
->>>>>>> e13e07eafbbe6b31b50e74b75e3954837246ba7a
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\USERR\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\LAPTOP WORLD\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> e13e07eafbbe6b31b50e74b75e3954837246ba7a
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5675,7 +5659,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -5765,12 +5749,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
->>>>>>> e13e07eafbbe6b31b50e74b75e3954837246ba7a
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

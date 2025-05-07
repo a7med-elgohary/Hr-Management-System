@@ -47,13 +47,13 @@ namespace HR_System.Domain.Models
         public required Department Department { get; set; }
 
         //One to many
-        public virtual ICollection<Attendance> Attendances { get; set; } = new List<Attendance>();
-        public virtual ICollection<Leave> Leaves { get; set; } = new List<Leave>();
-        public virtual ICollection<Salary> Salaries { get; set; } = new List<Salary>();
-        public virtual ICollection<Promotion> Promotions { get; set; } = new List<Promotion>();
-        public virtual ICollection<EmployeeTask> EmployeeTasks { get; set; } = new List<EmployeeTask>();
-        public virtual ICollection<Training> Trainings { get; set; } = new List<Training>();
-        public virtual ICollection<Events> Events { get; set; }
+        public ICollection<Attendance> Attendances { get; set; } = new List<Attendance>();
+        public ICollection<Leave> Leaves { get; set; } = new List<Leave>();
+        public ICollection<Salary> Salaries { get; set; } = new List<Salary>();
+        public ICollection<Promotion> Promotions { get; set; } = new List<Promotion>();
+        public ICollection<EmployeeTask> EmployeeTasks { get; set; } = new List<EmployeeTask>();
+        public ICollection<Training> Trainings { get; set; } = new List<Training>();
+        public ICollection<Events> Events { get; set; }
 
         //one to one
         [ForeignKey("UserAccount")]

@@ -202,6 +202,9 @@ namespace HR_System.Migrations
                     b.Property<long>("EmployeeID")
                         .HasColumnType("bigint");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
