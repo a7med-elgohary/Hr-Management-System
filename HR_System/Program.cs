@@ -121,6 +121,8 @@ namespace HR_System
                 });
             }
 
+
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseCors("AllowAll");
             app.UseAuthentication();  

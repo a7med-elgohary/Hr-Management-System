@@ -1,5 +1,6 @@
 ﻿using HR_System.Domain.Models;
 using HR_System.Infrastructure.Repository.Intefaces;
+using HR_System.RequestClasses;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -63,6 +64,77 @@ namespace HR_System.Api.Controllers
             public required User? UserAccount { get; set; }
 
 
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, Employee employee)
+        {
+            if (id != employee.Id) return BadRequest("ID mismatch");
+
+            var success = await _employeeRepository.UpdateAsync(employee);
+
+            if (!success) return NotFound("Employee not found or update failed"); // Handle failure properly
+
+            return NoContent(); // Success, return HTTP 204
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Employee>> Create([FromForm] EmployeeDto employeeDto)
+        {
+            if (employeeDto.Photo == null || employeeDto.Photo.Length == 0)
+                return BadRequest("Photo is required.");
+
+            // Save the photo
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+            Directory.CreateDirectory(uploadsFolder); // Ensure the folder exists
+            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(employeeDto.Photo.FileName);
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await employeeDto.Photo.CopyToAsync(stream);
+            }
+
+            // Create the employee
+            var employee = new Employee
+            {
+                FullName = employeeDto.FullName,
+                Email = employeeDto.Email,
+                Address = employeeDto.Address,
+                PhoneNumber = employeeDto.PhoneNumber,
+                JobTitle = employeeDto.JobTitle,
+                HireDate = employeeDto.HireDate,
+                NetSalary = employeeDto.NetSalary,
+                DepartmentId = employeeDto.DepartmentId,
+                ur = $"/uploads/{fileName}" // Relative path to access later
+            };
+
+            var createdEmployee = await _employeeRepository.AddAsync(employee);
+            return CreatedAtAction(nameof(GetById), new { id = createdEmployee.Id }, createdEmployee);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var success = await _employeeRepository.DeleteAsync(id);
+            if (!success) return NotFound();
+
+            return NoContent();
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Employee>>> GetAll()
+        {
+            var employees = await _employeeRepository.GetAllAsync();
+            return Ok(employees);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Employee>> GetById(int id)
+        {
+            var employee = await _employeeRepository.GetByIdAsync(id);
+            if (employee == null) return NotFound();
+            return Ok(employee);
         }
 
 
