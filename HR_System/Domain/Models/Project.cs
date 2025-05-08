@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using HR_System.Domain.Models.Enums;
 
 namespace HR_System.Domain.Models
 {
@@ -18,7 +19,7 @@ namespace HR_System.Domain.Models
 
         [Required]
         [StringLength(20)]
-        public string Status { get; set; } = "In Progress";  // Default value
+        public Status Status { get; set; } = Status.Pending;  // Default value
 
         // Foreign Key for the manager (Employee responsible for the project)
         [ForeignKey("Manager")]
@@ -30,5 +31,14 @@ namespace HR_System.Domain.Models
         public decimal Budget { get; set; } = 0;  // Default value
 
         public string? Description { get; set; }
+
+
+
+        ICollection<EmployeeTask> EmployeeTasks { get; set; } = new List<EmployeeTask>();
+        ICollection<Task> Tasks { get; set; } = new List<Task>();
+        ICollection<File> files { get; set; } = new List<File>();
+
+
+
     }
 }

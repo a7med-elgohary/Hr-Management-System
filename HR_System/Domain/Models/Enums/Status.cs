@@ -1,6 +1,6 @@
 ﻿namespace HR_System.Domain.Models.Enums
 {
-    public enum TaskStatus
+    public enum Status
     {
         Pending,    // قيد الانتظار
         InProgress, // جاري التنفيذ
