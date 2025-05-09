@@ -7,7 +7,7 @@
 ---
 
 ## Description
-A Human Resources Management System (HRMS) to manage employees, roles, permissions, and more. This project helps HR departments automate and streamline their daily operations.
+A Human Resources Management System (HRMS) to manage employees, roles, permissions, and more. This project helps HR departments automate and streamline their daily operations and it wll have a Work Room for the employees to work on their tasks.
 
 ## Features
 - Employee management (add, edit, delete, search)
