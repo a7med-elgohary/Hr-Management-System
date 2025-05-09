@@ -1,8 +1,11 @@
 # HR Management System
 
-> **Note:** _Add your project logo or a main screenshot here_
+> **Note:** _Add your project logo and screenshots in the `images` folder. Update the README accordingly._
 
-![Project Logo](images/logo.png)
+![Project Logo](![image](https://github.com/user-attachments/assets/4cbd5dfb-e866-4379-8d77-cf9338f87ae4)
+)
+![Project DashBord](![image](https://github.com/user-attachments/assets/5b938c8d-e48d-429c-923a-ca2dab696f38)
+)
 
 ---
 
@@ -14,10 +17,11 @@ A Human Resources Management System (HRMS) to manage employees, roles, permissio
 - Roles & permissions
 - User authentication
 - Reporting
-- more...
+- Work Room management
+- And more...
 
 ## Requirements
-- .NET (specify version, e.g., .NET 9.0)
+- .NET Core 9.0
 - SQL Server (or specify your DB)
 
 ## Installation
@@ -50,20 +54,25 @@ _Add screenshots to show main features and UI. Replace the image paths below wit
 
 ![Employee List Screenshot](images/employee-list.png)
 
+![Work Room Screenshot](images/work-room.png)
+
 ## Project Structure
 ```
 HR_System/
+├── .git/                 # Git version control
+├── .github/              # GitHub workflows/settings
+├── .vs/                  # Visual Studio settings
 ├── HR_System/            # Main application code
-├── Dockerfile            # Docker support
+│   ├── Api/              # API controllers
+│   ├── Application/      # Application logic/services
+│   ├── Domain/           # Domain models
+│   ├── Infrastructure/   # Data access, repositories
+│   ├── Migrations/       # EF Core migrations
+│   ├── Program.cs        # Application entry point
+│   ├── appsettings.json  # App configuration
+│   └── ...
+├── HR_System.sln         # Solution file
 ├── README.md             # Project documentation
+├── Library.txt           # (custom file)
 └── ...
 ```
-
-## Contribution
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-[MIT](LICENSE)
-
-## Contact
-For questions or support, contact [your-email@example.com](mailto:your-email@example.com)
