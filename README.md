@@ -14,13 +14,11 @@ A Human Resources Management System (HRMS) to manage employees, roles, permissio
 - Roles & permissions
 - User authentication
 - Reporting
-- Docker support
-- And more...
+- more...
 
 ## Requirements
-- .NET (specify version, e.g., .NET 7.0)
+- .NET (specify version, e.g., .NET 9.0)
 - SQL Server (or specify your DB)
-- Docker (optional)
 
 ## Installation
 ```bash
