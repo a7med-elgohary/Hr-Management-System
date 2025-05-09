@@ -12,20 +12,17 @@ namespace HR_System.Infrastructure.Repository
             
         }
 
-        public  async Task AddAsync(Employee employee)
-        {
-            _dbContext.Employees.Add(employee);
-            await _dbContext.SaveChangesAsync();
-        }
+        
 
-        public  async Task DeleteAsync(long id)
+        public async Task<bool> DeleteAsync(long id)
         {
             var employee = await _dbContext.Employees.FirstOrDefaultAsync(e => e.Id == id);
             if (employee != null)
             {
                 _dbContext.Employees.Remove(employee);
-                await _dbContext.SaveChangesAsync();
+                
             }
+            return await _dbContext.SaveChangesAsync() > 0;
 
         }
         public  async Task<IEnumerable<Employee>> GetAllAsync()
@@ -40,12 +37,11 @@ namespace HR_System.Infrastructure.Repository
 
         public  async Task<Employee> GetByIdAsync(long id)
         {
-            // هنا ممكن تعدل وتشيل الأكسبشن ده بس خلي النوع متاع المتغير الراجع nullable
-            return await _dbContext.Employees.FirstOrDefaultAsync(e => e.Id == id)
+            return await _DbSet.FirstOrDefaultAsync(e => e.Id == id)
                    ?? throw new InvalidOperationException($"Employee with ID {id} not found.");
         }
 
-        public  async Task UpdateAsync(Employee entity)
+        public  async Task<bool> UpdateAsync(Employee entity)
         {
             var employee = await _dbContext.Employees.FirstOrDefaultAsync(e => e.Id == entity.Id);
             
@@ -53,7 +49,7 @@ namespace HR_System.Infrastructure.Repository
                 throw  new InvalidOperationException($"Employee with ID {entity.Id} not found.");
 
             employee = entity;
-            await _dbContext.SaveChangesAsync();
+            return await _dbContext.SaveChangesAsync() > 0;
         }
     }
 }

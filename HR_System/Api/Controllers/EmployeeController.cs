@@ -1,5 +1,7 @@
-﻿using HR_System.Domain.Models;
+﻿using AutoMapper;
+using HR_System.Domain.Models;
 using HR_System.Infrastructure.Repository.Intefaces;
+using HR_System.RequestClasses;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,58 +13,129 @@ namespace HR_System.Api.Controllers
     [ApiController]
     public class EmployeeController : Controller
     {
-        private IEmployeeRepository _employeeRepository;
-        public EmployeeController(IEmployeeRepository employeeRepository)
+        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IMapper _mapper;
+        public EmployeeController(IEmployeeRepository employeeRepository, IMapper mapper)
         {
             _employeeRepository = employeeRepository;
+            _mapper = mapper;
         }
 
         [HttpPost("")]
-        public async Task<IActionResult> AddNew([FromBody] Employee employee)
+        public async Task<IActionResult> AddNew([FromForm] EmployeeDto employeeDto)
         {
+          
+
+            if (employeeDto == null)
+                return BadRequest("Employee data is required.");
+
+            if (!ModelState.IsValid)
+                return BadRequest("Invalid model data.");
+
+            var employee = _mapper.Map<Employee>(employeeDto);
             await _employeeRepository.AddAsync(employee);
             return Ok(employee);
         }
 
-        public class EmployyRequset
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id,[FromBody] EmployeeDto employee )
         {
-            [Required]
-            public required string FullName { get; set; }
-            // Email - UNIQUE and NOT NULL
-            [Required]
-            [EmailAddress]
-            public required string Email { get; set; }
-            // Address - NULLABULE
-            [StringLength(200)]
-            public string? Address { get; set; }
-            // Phone Number - NOT NULL
-            [Required]
-            public required string PhoneNumber { get; set; }
-            // Phone Number - NOT NULL
-            [Required]
-            public required string JobTitle { get; set; }
-            // Hire Date - NOT NULL
-            [Required]
-            public required DateTime HireDate { get; set; } = DateTime.Now;
-            // Salary - NOT NULL and range check
-            [Required]
-            [Range(0, double.MaxValue)]
-            public decimal NetSalary { get; set; }
-            //50,000
-            //relation ships
-            //Many Employee to One Dept
-            [ForeignKey("Department")]
-            public long DepartmentId { get; set; }
-            [Required]
-            public required Department Department { get; set; }
+            //if (id != employee.Id) return BadRequest("ID mismatch");
+           
+            var existingEmployee = await _employeeRepository.GetByIdAsync(id);
+            if (existingEmployee == null)
+                return NotFound("Employee not found");
+            _mapper.Map(employee, existingEmployee);
+            if (employee.file != null && employee.file.Length > 0)
+            {
+                // تحديد المسار الذي سيتم حفظ الصورة فيه
+                var rootPath = Directory.GetCurrentDirectory(); // المسار الأساسي للتطبيق
+                var fileDirectory = Path.Combine(rootPath, "wwwroot", "images");
 
-            //user account
-            [ForeignKey("UserAccount")]
-            public long? UserAccountId { get; set; }
-            [Required]
-            public required User? UserAccount { get; set; }
+                // التأكد من أن المجلد موجود، وإذا لم يكن موجودًا، قم بإنشائه
+                if (!Directory.Exists(fileDirectory))
+                {
+                    Directory.CreateDirectory(fileDirectory);
+                }
 
+                // تحديد اسم الملف بشكل فريد (اختياري)
+                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(employee.file.FileName);
 
+                // تحديد المسار الكامل لحفظ الصورة
+                var filePath = Path.Combine(fileDirectory, uniqueFileName);
+
+                // حفظ الصورة في المسار المحدد
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await employee.file.CopyToAsync(stream);
+                }
+
+                // تعيين الـ URL للصورة في الكائن Employee
+                existingEmployee.Url = "~/images/" + uniqueFileName; // URL للصورة relative للـ root
+            }
+            var success = await _employeeRepository.UpdateAsync(existingEmployee);
+
+            if (!success) return NotFound("Employee not found or update failed"); // Handle failure properly
+
+            return NoContent(); // Success, return HTTP 204
+        }
+
+        //[HttpPost]
+        //public async Task<ActionResult<Employee>> Create([FromForm] Employee employee)
+        //{
+            
+        //    // Save the photo
+        //    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+        //    Directory.CreateDirectory(uploadsFolder); // Ensure the folder exists
+        //    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(employee.Url.FileName);
+        //    var filePath = Path.Combine(uploadsFolder, fileName);
+
+        //    using (var stream = new FileStream(filePath, FileMode.Create))
+        //    {
+        //        await employee.Photo.CopyToAsync(stream);
+        //    }
+
+        //    // Create the employee
+        //    var employee = new Employee
+        //    {
+        //        FullName = employee.FullName,
+        //        Email = employee.Email,
+        //        Address = employee.Address,
+        //        PhoneNumber = employee.PhoneNumber,
+        //        JobTitle = employee.JobTitle,
+        //        HireDate = employee.HireDate,
+        //        NetSalary = employee.NetSalary,
+        //        DepartmentId = employee.DepartmentId,
+        //        Url = $"/uploads/{fileName}" // Relative path to access later
+        //    };
+
+        //    var createdEmployee = await _employeeRepository.AddAsync(employee);
+        //    return CreatedAtAction(nameof(GetById), new { id = createdEmployee.Id }, createdEmployee);
+        //}
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var success = await _employeeRepository.DeleteAsync(id);
+            if (!success) return NotFound();
+
+            return NoContent();
+        }
+
+        [HttpGet("")]
+        public async Task<ActionResult<IEnumerable<Employee>>> GetAll()
+        {
+            var employees = await _employeeRepository.GetAllAsync();
+            return Ok(employees);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Employee>> GetById(int id)
+        {
+            var employee = await _employeeRepository.GetByIdAsync(id);
+            if (employee == null) return NotFound();
+            return Ok(employee);
         }
 
 

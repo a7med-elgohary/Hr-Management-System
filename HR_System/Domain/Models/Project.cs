@@ -36,7 +36,6 @@ namespace HR_System.Domain.Models
 
         ICollection<EmployeeTask> EmployeeTasks { get; set; } = new List<EmployeeTask>();
         ICollection<Task> Tasks { get; set; } = new List<Task>();
-        ICollection<File> files { get; set; } = new List<File>();
 
 
 

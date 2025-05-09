@@ -20,17 +20,10 @@ namespace HR_System
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // in non-development, listen on HTTP port 80 to skip SSL redirection
-            if (!builder.Environment.IsDevelopment())
-            {
-                builder.WebHost.ConfigureKestrel(opts =>
-                {
-                    opts.ListenAnyIP(80);
-                });
-            }
-
             // Add services to the container.
             builder.Services.AddControllers();
+            // Register AutoMapper and scan for MappingProfile
+            builder.Services.AddAutoMapper(typeof(HR_System.Api.Mappings.MappingProfile));
             // enable CORS
             builder.Services.AddCors(options =>
             {
@@ -110,24 +103,31 @@ namespace HR_System
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
+            //Configure the HTTP request pipeline.
+          //  if (app.Environment.IsDevelopment())
+          // {
                 app.UseSwagger();
-                app.UseSwaggerUI(c =>
-                {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "HR System API v1");
-                    c.RoutePrefix = string.Empty; 
-                });
-            }
+                app.UseSwaggerUI(
+                    c =>
+                    {
+                        // تأكد من أن swagger UI يفتح على الفور
+                        c.SwaggerEndpoint("/swagger/v1/swagger.json", "HR System API v1");
+                        c.RoutePrefix = string.Empty;  // لج
+                    });
+            //}
 
+
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseCors("AllowAll");
             app.UseAuthentication();  
             app.UseAuthorization();   
-            app.MapControllers();     
+            app.MapControllers();
             // root health-check endpoint
-            app.MapGet("/", () => Results.Ok("HR System API is running"));
+            app.MapGet("/", context => {
+                context.Response.Redirect("/swagger");
+                return Task.CompletedTask;
+            });
             app.Run();
         }
     }

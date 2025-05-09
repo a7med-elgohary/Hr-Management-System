@@ -32,7 +32,7 @@ namespace HR_System.Domain.Models
 
         // Hire Date - NOT NULL
         [Required]
-        public required DateTime HireDate { get; set; } = DateTime.Now;
+        public DateTime? HireDate { get; set; } = DateTime.Now;
 
         // Salary - NOT NULL and range check
         [Required]
@@ -40,12 +40,13 @@ namespace HR_System.Domain.Models
         public decimal NetSalary { get; set; }
         //50,000
 
-        //relation ships
+        //relation shipsP
         //Many Employee to One Dept
         [ForeignKey("Department")]
         public long DepartmentId { get; set; }
         public required Department Department { get; set; }
 
+        public string? Url { get; set; }
         //One to many
         public ICollection<Attendance> Attendances { get; set; } = new List<Attendance>();
         public ICollection<Leave> Leaves { get; set; } = new List<Leave>();
@@ -57,8 +58,8 @@ namespace HR_System.Domain.Models
 
         //one to one
         [ForeignKey("UserAccount")]
-        public long? UserAccountId { get; set; }
-        public User? UserAccount { get; set; }
+        public long? UserAccountId { get; set; } 
+        public User? UserAccount { get; set; } 
     }
 }
 #region relation ships 
