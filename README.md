@@ -49,10 +49,6 @@ _Add screenshots to show main features and UI. Replace the image paths below wit
 
 ![Project Dashboard](https://github.com/user-attachments/assets/5b938c8d-e48d-429c-923a-ca2dab696f38)
 
-![Employee List Screenshot](images/employee-list.png)
-
-![Work Room Screenshot](images/work-room.png)
-
 ## Project Structure
 ```
 HR_System/
