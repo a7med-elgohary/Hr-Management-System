@@ -2,10 +2,7 @@
 
 > **Note:** _Add your project logo and screenshots in the `images` folder. Update the README accordingly._
 
-![Project Logo](![image](https://github.com/user-attachments/assets/4cbd5dfb-e866-4379-8d77-cf9338f87ae4)
-)
-![Project DashBord](![image](https://github.com/user-attachments/assets/5b938c8d-e48d-429c-923a-ca2dab696f38)
-)
+![Project Logo](https://github.com/user-attachments/assets/4cbd5dfb-e866-4379-8d77-cf9338f87ae4)
 
 ---
 
@@ -50,7 +47,7 @@ dotnet run
 ## Screenshots
 _Add screenshots to show main features and UI. Replace the image paths below with your actual images._
 
-![Dashboard Screenshot](images/dashboard.png)
+![Project Dashboard](https://github.com/user-attachments/assets/5b938c8d-e48d-429c-923a-ca2dab696f38)
 
 ![Employee List Screenshot](images/employee-list.png)
 
