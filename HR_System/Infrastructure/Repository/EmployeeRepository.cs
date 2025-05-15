@@ -1,5 +1,5 @@
 ﻿using HR_System.Domain.Models;
-using HR_System.Infrastructure.Repository.Intefaces;
+using HR_System.Infrastructure.Intefaces;
 using Microsoft.EntityFrameworkCore;
 using NLog.LayoutRenderers;
 
@@ -45,7 +45,7 @@ namespace HR_System.Infrastructure.Repository
         {
             var employee = await _dbContext.Employees.FirstOrDefaultAsync(e => e.Id == entity.Id);
             
-            if (employee != null)
+            if (employee == null)
                 throw  new InvalidOperationException($"Employee with ID {entity.Id} not found.");
 
             employee = entity;

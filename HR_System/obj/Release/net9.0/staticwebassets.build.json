@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "RqA7nZX8GcdHPvFcyN00atYkjAbnYSxBsgR7NOWCVis=",
+  "Hash": "EqKI1wsfAaDRuuI7748poikzo2gs1E/BNolI6piK0QU=",
   "Source": "HR_System",
   "BasePath": "_content/HR_System",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "HR_System\\wwwroot",
+      "Source": "HR_System",
+      "ContentRoot": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\",
+      "BasePath": "_content/HR_System",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\images\\ea68a36c-966e-485d-865f-186c09f9c554.jpg",
+      "SourceId": "HR_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\",
+      "BasePath": "_content/HR_System",
+      "RelativePath": "images/ea68a36c-966e-485d-865f-186c09f9c554#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w3j3i0goy3",
+      "Integrity": "fNWUn2yRZIoos4TQT5tLxyyJTGPlCfOMFzG5E80gqdc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ea68a36c-966e-485d-865f-186c09f9c554.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/ea68a36c-966e-485d-865f-186c09f9c554.jpg",
+      "AssetFile": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\images\\ea68a36c-966e-485d-865f-186c09f9c554.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fNWUn2yRZIoos4TQT5tLxyyJTGPlCfOMFzG5E80gqdc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 17:43:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fNWUn2yRZIoos4TQT5tLxyyJTGPlCfOMFzG5E80gqdc="
+        }
+      ]
+    },
+    {
+      "Route": "images/ea68a36c-966e-485d-865f-186c09f9c554.w3j3i0goy3.jpg",
+      "AssetFile": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\images\\ea68a36c-966e-485d-865f-186c09f9c554.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fNWUn2yRZIoos4TQT5tLxyyJTGPlCfOMFzG5E80gqdc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 10 May 2025 17:43:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w3j3i0goy3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ea68a36c-966e-485d-865f-186c09f9c554.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fNWUn2yRZIoos4TQT5tLxyyJTGPlCfOMFzG5E80gqdc="
+        }
+      ]
+    }
+  ]
 }

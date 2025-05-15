@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using HR_System.Domain.Models;
-using HR_System.Infrastructure.Repository.Intefaces;
+using HR_System.Infrastructure.Intefaces;
 using HR_System.RequestClasses;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
@@ -24,8 +24,6 @@ namespace HR_System.Api.Controllers
         [HttpPost("")]
         public async Task<IActionResult> AddNew([FromForm] EmployeeDto employeeDto)
         {
-          
-
             if (employeeDto == null)
                 return BadRequest("Employee data is required.");
 
@@ -39,7 +37,7 @@ namespace HR_System.Api.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id,[FromBody] EmployeeDto employee )
+        public async Task<IActionResult> Update(int id,[FromForm] EmployeeDto employee )
         {
             //if (id != employee.Id) return BadRequest("ID mismatch");
            
@@ -124,10 +122,11 @@ namespace HR_System.Api.Controllers
         }
 
         [HttpGet("")]
-        public async Task<ActionResult<IEnumerable<Employee>>> GetAll()
+        public async Task<ActionResult<IEnumerable<EmployeeDto>>> GetAll()
         {
             var employees = await _employeeRepository.GetAllAsync();
-            return Ok(employees);
+            var value =  _mapper.Map<IEnumerable<EmployeeDto>>(employees);
+            return Ok(value);
         }
 
         [HttpGet("{id}")]

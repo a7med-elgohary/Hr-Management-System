@@ -1,4 +1,4 @@
-﻿using HR_System.Infrastructure.Repository.Intefaces;
+﻿using HR_System.Infrastructure.Intefaces;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;

@@ -1,7 +1,7 @@
-﻿using HR_System.Application.Services.intrfaces;
+﻿using HR_System.Application.intrfaces;
 using HR_System.Domain.Models;
+using HR_System.Infrastructure.Intefaces;
 using HR_System.Infrastructure.Repository;
-using HR_System.Infrastructure.Repository.Intefaces;
 
 namespace HR_System.Application.Services
 {
@@ -15,6 +15,11 @@ namespace HR_System.Application.Services
             _employeeRepository = employeeRepository;
         }
 
+        public async Task<IEnumerable<Employee>> GetFirst(int number)
+        {
+            var employees = await _employeeRepository.GetAllAsync();
+            return employees.Take(number);
+        }
         public Task AddAsync(Employee entity)
         {
             throw new NotImplementedException();

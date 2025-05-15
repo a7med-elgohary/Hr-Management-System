@@ -1,6 +1,6 @@
-using HR_System.Application.Services.intrfaces;
+using HR_System.Application.intrfaces;
 using HR_System.Domain.Models;
-using HR_System.Infrastructure.Repository.Intefaces;
+using HR_System.Infrastructure.Intefaces;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -23,9 +23,9 @@ namespace HR_System.Application.Services
             _config = config;
         }
 
-        public async Task<string?> LoginAsync(string username, string password)
+        public async Task<string?> LoginAsync(string Email, string password)
         {
-            var user = await _userRepository.GetByUsernameAsync(username);
+            var user = await _userRepository.GetByUsernameAsync(Email);
             if (user == null)
                 return null;
 
@@ -38,7 +38,7 @@ namespace HR_System.Application.Services
 
             var roles = await _userRepository.GetRolesAsync(user.Id);
             var permissions = await _userRepository.GetPermissionsAsync(user.Id);
-
+            //claims
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.Username),

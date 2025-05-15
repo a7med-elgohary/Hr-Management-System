@@ -1,8 +1,6 @@
 using HR_System.Application.Services;
-using HR_System.Application.Services.intrfaces;
 using HR_System.Domain.Models;
 using HR_System.Infrastructure.Repository;
-using HR_System.Infrastructure.Repository.Intefaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using HR_System.Application.intrfaces;
+using HR_System.Infrastructure.Intefaces;
 
 namespace HR_System
 {
@@ -28,7 +28,10 @@ namespace HR_System
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll", policy =>
-                    policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+                    policy.WithOrigins("https://yourdomain.com", "http://localhost:3000", "https://system-e-bussiness.vercel.app")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
             });
             //Context
             builder.Services.AddDbContext<AppDbContext>(options =>
@@ -94,14 +97,25 @@ namespace HR_System
 
             #region dependency injection
             builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddScoped<IEmployeeService, EmployeeService>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IEventRepository, EventsRepository>();
+            builder.Services.AddScoped<IProjectRepository, ProjectRepository>(); 
+            builder.Services.AddScoped<IProjectService, ProjectServices>();
+            builder.Services.AddScoped<IEventRepository, EventsRepository>();
+            builder.Services.AddScoped<IEventService, EventService>();
             #endregion
 
 
 
             var app = builder.Build();
+
+            // Enforce HTTPS
+            app.UseHttpsRedirection();
+            app.UseHsts();
+            app.UseStaticFiles();
+            app.UseRouting();
 
             //Configure the HTTP request pipeline.
           //  if (app.Environment.IsDevelopment())
@@ -112,7 +126,7 @@ namespace HR_System
                     {
                         // تأكد من أن swagger UI يفتح على الفور
                         c.SwaggerEndpoint("/swagger/v1/swagger.json", "HR System API v1");
-                        c.RoutePrefix = string.Empty;  // لج
+                        c.RoutePrefix = string.Empty; 
                     });
             //}
 

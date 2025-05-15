@@ -180,3 +180,6 @@ C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\refint\HR_System.d
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\HR_System.pdb
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\HR_System.genruntimeconfig.cache
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\ref\HR_System.dll
+C:\Users\USERR\Desktop\HR_System\HR_System\bin\Release\net9.0\Castle.Core.dll
+C:\Users\USERR\Desktop\HR_System\HR_System\bin\Release\net9.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\USERR\Desktop\HR_System\HR_System\bin\Release\net9.0\HR_System.staticwebassets.runtime.json

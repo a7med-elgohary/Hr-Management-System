@@ -1,6 +1,6 @@
 ﻿using static HR_System.Application.Services.AuthService;
 
-namespace HR_System.Application.Services.intrfaces
+namespace HR_System.Application.intrfaces
 {
     public interface IAuthService
     {

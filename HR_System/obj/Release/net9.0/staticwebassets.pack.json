@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\images\\ea68a36c-966e-485d-865f-186c09f9c554.jpg",
+      "PackagePath": "staticwebassets\\images\\ea68a36c-966e-485d-865f-186c09f9c554.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.HR_System.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.HR_System.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.build.HR_System.props",
+      "PackagePath": "build\\HR_System.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.HR_System.props",
+      "PackagePath": "buildMultiTargeting\\HR_System.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildTransitive.HR_System.props",
+      "PackagePath": "buildTransitive\\HR_System.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

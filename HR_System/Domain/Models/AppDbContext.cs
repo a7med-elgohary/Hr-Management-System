@@ -1,4 +1,4 @@
-using HR_System.Domain.Models;
+﻿using HR_System.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 public class AppDbContext : DbContext
@@ -22,7 +22,10 @@ public class AppDbContext : DbContext
     public DbSet<EmployeeTask> EmployeeTasks { get; set; }
     public DbSet<Training> Trainings { get; set; }
     public DbSet<Events> events { get; set; }
+
+
     
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Define relationships between tables

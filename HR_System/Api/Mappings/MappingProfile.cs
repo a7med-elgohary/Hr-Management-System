@@ -16,6 +16,9 @@ namespace HR_System.Api.Mappings
             CreateMap<Employee, EmployeeDto>()
                .ForMember(dest => dest.UserAccountId, opt => opt.MapFrom(src => src.UserAccountId));
 
+            CreateMap<ProjectDto, Project>().ReverseMap();
+
+
         }
     }
 }

@@ -17,8 +17,6 @@ namespace HR_System.Domain.Models
 
         public DateTime? EndDate { get; set; }
 
-        [Required]
-        [StringLength(20)]
         public Status Status { get; set; } = Status.Pending;  // Default value
 
         // Foreign Key for the manager (Employee responsible for the project)

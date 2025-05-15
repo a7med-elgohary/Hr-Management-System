@@ -1,5 +1,5 @@
 using HR_System.Domain.Models;
-using HR_System.Infrastructure.Repository.Intefaces;
+using HR_System.Infrastructure.Intefaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace HR_System.Infrastructure.Repository

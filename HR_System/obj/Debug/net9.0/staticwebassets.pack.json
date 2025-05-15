@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\images\\05031df5-1da3-439a-b053-8877bc1d7e33.jpg",
+      "PackagePath": "staticwebassets\\images\\05031df5-1da3-439a-b053-8877bc1d7e33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\images\\7157b40a-b8d2-4e7f-a0a4-da587b3ab73d.jpg",
+      "PackagePath": "staticwebassets\\images\\7157b40a-b8d2-4e7f-a0a4-da587b3ab73d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\images\\9f53f77a-13f7-44ac-8da9-747789e2c40b.jpg",
+      "PackagePath": "staticwebassets\\images\\9f53f77a-13f7-44ac-8da9-747789e2c40b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\images\\b1c32949-e4ab-4e1e-a2c4-1b42bb447cb5.jpg",
+      "PackagePath": "staticwebassets\\images\\b1c32949-e4ab-4e1e-a2c4-1b42bb447cb5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USERR\\Desktop\\HR_System\\HR_System\\wwwroot\\images\\ea68a36c-966e-485d-865f-186c09f9c554.jpg",
+      "PackagePath": "staticwebassets\\images\\ea68a36c-966e-485d-865f-186c09f9c554.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.HR_System.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.HR_System.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.HR_System.props",
+      "PackagePath": "build\\HR_System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.HR_System.props",
+      "PackagePath": "buildMultiTargeting\\HR_System.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.HR_System.props",
+      "PackagePath": "buildTransitive\\HR_System.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

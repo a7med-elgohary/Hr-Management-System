@@ -1,3 +1,4 @@
+using HR_System.Domain.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -30,6 +31,8 @@ namespace HR_System.Domain.Models
         [Required]
         public required string JobTitle { get; set; }
 
+        [Required]
+        public required SeniorityLevels SeniorityLevels { get; set; }
         // Hire Date - NOT NULL
         [Required]
         public DateTime? HireDate { get; set; } = DateTime.Now;

@@ -169,3 +169,6 @@ C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\refint\HR_
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\HR_System.pdb
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\HR_System.genruntimeconfig.cache
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\ref\HR_System.dll
+C:\Users\USERR\Desktop\HR_System\HR_System\bin\Release\net9.0\win-x86\Castle.Core.dll
+C:\Users\USERR\Desktop\HR_System\HR_System\bin\Release\net9.0\win-x86\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\USERR\Desktop\HR_System\HR_System\bin\Release\net9.0\win-x86\HR_System.staticwebassets.runtime.json

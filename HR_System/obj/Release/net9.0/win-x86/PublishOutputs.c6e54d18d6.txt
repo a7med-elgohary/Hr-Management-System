@@ -9,6 +9,7 @@ C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Azure.Core.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Azure.Identity.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\BCrypt.Net-Next.dll
+C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Castle.Core.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\FluentValidation.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\FluentValidation.AspNetCore.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\FluentValidation.DependencyInjectionExtensions.dll
@@ -19,6 +20,7 @@ C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\USERR\Desktop\HR_System\HR_System\obj\Release\net9.0\win-x86\PubTmp\Out\Microsoft.Extensions.Caching.Abstractions.dll

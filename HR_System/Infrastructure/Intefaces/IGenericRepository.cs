@@ -1,4 +1,4 @@
-﻿namespace HR_System.Infrastructure.Repository.Intefaces
+﻿namespace HR_System.Infrastructure.Intefaces
 {
     public interface IGenericRepository<T> where T : class
     {

@@ -1,4 +1,4 @@
-using HR_System.Application.Services.intrfaces;
+using HR_System.Application.intrfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
